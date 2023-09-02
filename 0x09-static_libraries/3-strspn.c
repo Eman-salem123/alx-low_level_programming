@@ -1,29 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * _strspn - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strspn - length of prefix substring
+ * @s: string to go through
+ * @accept: accepted bytes
+ * Return: returns usigned values
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0;
-	int r;
+	int i;
+	int j;
+	unsigned int result = 0;
 
-
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (r = 0; accept[r]; r++)
+		for (j = 0; s[j] != '\0'; j++)
 		{
-			if (*s == accept[r])
+			if (s[i] == accept[j])
 			{
-				n++;
+				result++;
 				break;
 			}
-			else if (accept[r + 1] == '\0')
-				return (n);
 		}
-		s++;
+		if (s[j] == '\0')
+			return (result);
 	}
-	return (n)
+	return (result);
 }
