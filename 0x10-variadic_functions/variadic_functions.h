@@ -1,4 +1,3 @@
-```h
 #ifndef VARIADIC_FUNC
 #define VARIADIC_FUNC
 int _putchar(char c);
