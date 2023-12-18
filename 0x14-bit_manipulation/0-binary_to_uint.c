@@ -10,6 +10,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
+	
 	unsigned int u;
 	int two, base;
 
