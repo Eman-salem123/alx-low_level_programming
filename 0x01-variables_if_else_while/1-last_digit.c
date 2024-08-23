@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+* main -  entry
+* description -  print the last digit of the number stored in the variable n
+* Return: Always  0
+*/
 int main(void)
 {
 	int n , a;
@@ -24,4 +26,4 @@ int main(void)
          printf("Last digit of %d is %d and is 0\n",n,a);
     }
 	return (0);
-	
+}
